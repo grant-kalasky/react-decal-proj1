@@ -14,3 +14,12 @@ We need to wrap `addToCart` with another function because we want to pass an arg
 1.4a) Our ability to map over the dictionary of products from `ProductData` allows us to only have to write one Product component in the Cart's render function. 
 
 1.4b) We don't write a fixed number of Product components because the number of products we may display on our site will not always be the same. Aside from code cleanliness, pulling data from an object allows our website to be dynamic. As data may change on our backend (e.g. the number of products in stock), our app can reflect these changes on the frontend without us having to change the code itself.
+
+####2.0
+A friends-list component for a social media app would need state. This is because the list needs to keep track of newly-added friends as well as friends the user may have removed. This information needs to be stored in state so that any changes can be rendered properly. 
+
+####2.1
+Parent-to-child communication is achieved through props. Child-to-parent communication is achieved through state. We can pass functions into child components that will update a part of the parent's state.
+
+####2.2
+To remove and add items to the cart, we can store the items in an array. This will allow us to easily add and remove items from the Cart.
